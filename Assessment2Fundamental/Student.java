@@ -22,7 +22,7 @@ public class Student
         this.totalMarks = calculateTotalMarks();
     }
         
-    private int calculateTotalMarks() {
+    public int calculateTotalMarks() {
         int sum = 0;
         for (int mark : marks) {
             sum += mark;

@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public interface StudentInterface
+public interface StudentProcessor
 {
     void readStudentsFromFile(String filename);
     void StudentsDetailBelowThreshold(int threshold);
