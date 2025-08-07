@@ -16,24 +16,30 @@ public class StudentManager implements StudentProcessor {
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine().trim();
 
-                // Skip empty or comment-like lines
-                if (line.isEmpty()) continue;
+                
 
-                String[] parts = line.split("\\s+");
-                if (parts.length != 6) {
-                    System.out.println("Skipping line (not a valid student record): " + line);
+                // Skip empty or clearly non-data lines
+                if (line.isEmpty() || !line.contains(",")) 
                     continue;
-                }
+
+                String[] parts = line.split(",");
+
+                
+               if (parts.length < 6) {
+                    //System.out.println("Skipping line (not a valid student record): " + line);
+                    continue;
+               }
+                
 
                 String lastName = parts[0];
                 String firstName = parts[1];
                 String studentId = parts[2];
-                int[] marks = new int[3];
+                double[] marks = new double[3];
 
                 try {
-                    marks[0] = Integer.parseInt(parts[3]);
-                    marks[1] = Integer.parseInt(parts[4]);
-                    marks[2] = Integer.parseInt(parts[5]);
+                    marks[0] = Double.parseDouble(parts[3]);
+                    marks[1] = Double.parseDouble(parts[4]);
+                    marks[2] = Double.parseDouble(parts[5]);
                 } catch (NumberFormatException e) {
                     System.out.println("Skipping line (invalid mark entry): " + line);
                     continue;
