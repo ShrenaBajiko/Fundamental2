@@ -11,10 +11,10 @@ public class Student
     private String firstName;
     private String lastName;
     private String studentId;
-    private int[] marks;
-    private int totalMarks;
+    private double[] marks;
+    private double totalMarks;
     
-    public Student(String lastName, String firstName, String studentId, int[] marks) {
+    public Student(String lastName, String firstName, String studentId, double[] marks) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.studentId = studentId;
@@ -24,13 +24,13 @@ public class Student
         
     public int calculateTotalMarks() {
         int sum = 0;
-        for (int mark : marks) {
+        for (double mark : marks) {
             sum += mark;
         }
         return sum;
     }
     
-    public int getTotalMarks() {
+    public double getTotalMarks() {
         return totalMarks;
     }
     
