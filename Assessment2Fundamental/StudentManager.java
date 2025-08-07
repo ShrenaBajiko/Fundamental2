@@ -48,5 +48,13 @@ public class StudentManager implements StudentProcessor {
         }
     }
 
- 
+    @Override
+    public void StudentsDetailBelowThreshold(int threshold) {
+        System.out.println("\nStudents with total marks below " + threshold + ":");
+        for (Student student : students) {
+            if (student.calculateTotalMarks() < threshold) {
+                System.out.println(student.getDetails());
+            }
+        }
+    }
 }
