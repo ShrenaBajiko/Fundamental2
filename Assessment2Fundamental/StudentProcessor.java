@@ -9,4 +9,5 @@ public interface StudentProcessor
 {
     void readStudentsFromFile(String filename);
     void StudentsDetailBelowThreshold(int threshold);
+    void displayTotalMarksForAll();
 }

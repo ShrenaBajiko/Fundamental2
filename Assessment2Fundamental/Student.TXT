@@ -1,7 +1,7 @@
 Unit: Fundamentals of Programming
 Last Name,First Name,Student ID,A1,A2,A3
-Karki,Aanchal,23851391,27,18.5,24.5
-Olda,Aayush,23038615,21,,
+Karki,Aanchal,23851391,27,18.5,109
+Olda,Aayush,23038615,21,23,44
 Shrestha,Abdul,23391716,16.5,15,37.5
 Srinivasan,Abhishek,23614646,26.5,17.5,25.5
 Tarun,Abir,22966689,28,15.5,28
@@ -17,7 +17,7 @@ Ochieng,Chanuda,23541977,18.5,25.5,33.5
 Philip,Christapher,23714397,25,18.5,31.5
 Singh,Dilshani,23227112,28,25,29.5
 Stiles,Elijah,22598943,20,24,38.5
-Aujayeb,Gregory,23692215,,21,3
+Aujayeb,Gregory,23692215,44,21,3
 Bajwa,Gurpreet Singh,23858363,14,5,1
 Tusher,Harshika,22933269,19.5,6,8
 Borowiak,Huanghao,23820553,28,26.5,36.5
